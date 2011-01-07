@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/supersonic/supersonic.mk)
 
 # Inherit some common stuffs.
-$(call inherit-product, vendor/cyanogen/products/common.mk)
+$(call inherit-product, vendor/evervolv/products/common.mk)
 
 #
 # Setup device specific product configuration.
@@ -12,15 +12,17 @@ PRODUCT_BRAND := sprint
 PRODUCT_DEVICE := supersonic
 PRODUCT_MODEL := PC36100
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NAME=htc_supersonic BUILD_FINGERPRINT=sprint/htc_supersonic/supersonic/supersonic:2.2/FRF91/252548:user/release-keys PRIVATE_BUILD_DESC="3.29.651.5 CL252548 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NAME=htc_supersonic BUILD_FINGERPRINT=sprint/htc_supersonic/supersonic/supersonic:2.2/FRF91/294884:user/release-keys PRIVATE_BUILD_DESC=Evervolv-AOSP
 
-# Build kernel
-#PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
-#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
-#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_supersonic_defconfig
+# Set up the code name & Build version
 
+PRODUCT_CODENAME := Evervolv-Acies
+BUILD_VERSION := 1.0.0.0a17
+
+
+#TODO - FIXME
 # Extra Supersonic overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/supersonic
+#PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/supersonic
 
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch
@@ -28,7 +30,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/supersonic
 #
 # Set ro.modversion
 #
-ifdef CYANOGEN_NIGHTLY
+
+ifdef NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=Evervolv-Acies-v1.0.0-a0-$(shell date +%m%d%Y)-NIGHTLY-Supersonic
 else
@@ -36,8 +39,8 @@ else
         ro.modversion=Evervolv-Acies-v1.0.0-a0-Supersonic
 endif
 
-#
+#TODO - FIXME
 # Copy supersonic specific prebuilt files
 #
-PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+#PRODUCT_COPY_FILES +=  \
+    vendor/evervolv/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip

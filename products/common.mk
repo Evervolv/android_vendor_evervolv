@@ -5,7 +5,6 @@ PRODUCT_DEVICE := generic
 
 # PRODUCT_PACKAGES += ADWLauncher
 
-# Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=DonMessWivIt.ogg
 
@@ -31,21 +30,48 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Evervolv specific product packages
 PRODUCT_PACKAGES += \
+    EVParts \
+    FileManager 
 
-# xxxxx
-
-# Enable FM radio if supported
-#ifeq ($(BOARD_HAVE_FM_RADIO), true)
-#    PRODUCT_PACKAGES += FM
-#endif
+# Extra tools in Evervolv
+PRODUCT_PACKAGES += \
+    openvpn
 
 
-# Common CM overlay
+
+# Common Evervolv overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/common
 
 # Bring in some audio files
-#include frameworks/base/data/sounds/AudioPackage4.mk
-#include frameworks/base/data/sounds/AudioPackage5.mk
+include frameworks/base/data/sounds/AudioPackage4.mk
+include frameworks/base/data/sounds/AudioPackage5.mk
+
+PRODUCT_COPY_FILES += \
+    vendor/evervolv/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
+    vendor/evervolv/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/evervolv/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/evervolv/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
+    vendor/evervolv/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
+    vendor/evervolv/prebuilt/common/etc/profile:system/etc/profile \
+    vendor/evervolv/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/evervolv/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/evervolv/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/evervolv/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/evervolv/prebuilt/common/etc/init.d/04modules:system/etc/init.d/04modules \
+    vendor/evervolv/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
+    vendor/evervolv/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
+    vendor/evervolv/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/evervolv/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
+    vendor/evervolv/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/evervolv/prebuilt/common/xbin/htop:system/xbin/htop \
+    vendor/evervolv/prebuilt/common/xbin/irssi:system/xbin/irssi \
+    vendor/evervolv/prebuilt/common/xbin/powertop:system/xbin/powertop \
+    vendor/evervolv/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
+
+PRODUCT_COPY_FILES += \
+    vendor/evervolv/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
+#    vendor/evervolv/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
+
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

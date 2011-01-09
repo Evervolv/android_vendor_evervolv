@@ -18,7 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 # Set up the code name & Build version
 
 PRODUCT_CODENAME := Evervolv-Dives
-BUILD_VERSION := 1.0.0.0a20
+BUILD_VERSION := 1.0.1a1
 
 #TODO - FIXME
 # Extra Passion overlay

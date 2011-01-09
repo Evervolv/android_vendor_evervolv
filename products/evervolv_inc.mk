@@ -1,7 +1,23 @@
 $(call inherit-product, device/htc/inc/inc.mk)
-
-# Inherit some common Evervolv stuff.
 $(call inherit-product, vendor/evervolv/products/common.mk)
+
+PRODUCT_CODENAME := Evervolv-Dives
+
+NIGHTLY := true
+
+# Set up the code name & Build version
+
+ifdef NIGHTLY
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.modversion=Evervolv-Dives-v1.0.0-a1-$(shell date +%m%d%Y)-NIGHTLY-Inc
+	BUILD_VERSION := 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
+else
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.modversion=Evervolv-Dives-v1.0.0-a1-Inc
+	BUILD_VERSION := 1.0.1a1
+endif
+
+
 
 #
 # Setup device specific product configuration.
@@ -15,28 +31,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NA
 
 PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 
-# Set up the code name & Build version
-
-PRODUCT_CODENAME := Evervolv-Dives
-BUILD_VERSION := 1.0.1a1
 
 #TODO - FIXME
-# Extra Passion overlay
+# Extra inc overlay
 #PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/inc
 
-#
-# Set ro.modversion
-#
-ifdef NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Evervolv-Dives-v1.0.0-a0-$(shell date +%m%d%Y)-NIGHTLY-Inc
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Evervolv-Dives-v1.0.0-a0-Inc
-endif
 
 #TODO - FIXME
-# Copy passion specific prebuilt files
+# Copy inc specific prebuilt files
 #
-#PRODUCT_COPY_FILES +=  \
-#    vendor/evervolv/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+PRODUCT_COPY_FILES +=  \
+    vendor/evervolv/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip

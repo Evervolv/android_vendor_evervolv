@@ -1,21 +1,19 @@
-# Inherit AOSP device configuration for supersonic.
 $(call inherit-product, device/htc/supersonic/supersonic.mk)
-
-# Inherit some common stuffs.
 $(call inherit-product, vendor/evervolv/products/common.mk)
 
 PRODUCT_CODENAME := Evervolv-Acies
+
+NIGHTLY := true
 
 # Set up the code name & Build version
 ifdef NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=Evervolv-Acies-v1.0.0-a0-$(shell date +%m%d%Y)-NIGHTLY-Supersonic
-    BUILD_VERSION := 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
-
+    	BUILD_VERSION := 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
 else
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=Evervolv-Acies-v1.0.0-a0-Supersonic 
-    BUILD_VERSION := 1.0.1a1
+    	BUILD_VERSION := 1.0.1a1
 endif
 
 
@@ -38,10 +36,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NA
 
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch
-
-#
-# Set ro.modversion
-#
 
 #TODO - FIXME
 # Copy supersonic specific prebuilt files

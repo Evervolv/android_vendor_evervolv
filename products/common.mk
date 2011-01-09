@@ -43,8 +43,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/common
 
 # Bring in some audio files
-include frameworks/base/data/sounds/AudioPackage4.mk
-include frameworks/base/data/sounds/AudioPackage5.mk
+#include frameworks/base/data/sounds/AudioPackage4.mk
+#include frameworks/base/data/sounds/AudioPackage5.mk
 
 PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
@@ -67,6 +67,10 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/evervolv/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/evervolv/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
+
+#Temporarily use this prebuilt Superuser.apk
+PRODUCT_COPY_FILES += \
+    vendor/evervolv/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
 
 PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd

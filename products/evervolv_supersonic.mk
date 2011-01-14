@@ -3,16 +3,16 @@ $(call inherit-product, vendor/evervolv/products/common.mk)
 
 PRODUCT_CODENAME := Evervolv-Acies
 
-NIGHTLY := true
+NIGHTLY := false
 
 # Set up the code name & Build version
 ifdef NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Evervolv-Acies-v1.0.0-a0-$(shell date +%m%d%Y)-NIGHTLY-Supersonic
+        ro.build.romversion=Evervolv-Acies-v1.0.0-a0-$(shell date +%m%d%Y)-NIGHTLY-Supersonic \
     	BUILD_VERSION := 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Evervolv-Acies-v1.0.0-a0-Supersonic 
+        ro.build.romversion=Evervolv-Acies-v1.0.0-a0-Supersonic \
     	BUILD_VERSION := 1.0.1a1
 endif
 

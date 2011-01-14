@@ -9,11 +9,11 @@ NIGHTLY := true
 
 ifdef NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Evervolv-Ignis-v1.0.0-a1-$(shell date +%m%d%Y)-NIGHTLY-Inc
+        ro.build.romversion=Evervolv-Ignis-v1.0.0-a1-$(shell date +%m%d%Y)-NIGHTLY-Inc
 	BUILD_VERSION := 1.0.0a1-$(shell date +%m%d%Y)-NIGHTLY
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Evervolv-Ignis-v1.0.0-a1-Inc
+        ro.build.romversion=Evervolv-Ignis-v1.0.0-a1-Inc
 	BUILD_VERSION := 1.0.0a1
 endif
 

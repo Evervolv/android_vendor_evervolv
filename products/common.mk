@@ -72,8 +72,8 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
 
 PRODUCT_COPY_FILES += \
-    vendor/evervolv/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
-#    vendor/evervolv/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
+    vendor/evervolv/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
+    vendor/evervolv/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
 
 # Enable SIP+VoIP on all targets

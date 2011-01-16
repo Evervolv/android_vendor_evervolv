@@ -1,23 +1,6 @@
 $(call inherit-product, device/htc/inc/inc.mk)
 $(call inherit-product, vendor/evervolv/products/common.mk)
 
-PRODUCT_CODENAME := Evervolv-Dives
-
-NIGHTLY := true
-
-# Set up the code name & Build version
-ifdef NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.romversion=Evervolv-Dives-v1.0.0-a1-$(shell date +%m%d%Y)-NIGHTLY-Inc
-	BUILD_VERSION := 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.romversion=Evervolv-Dives-v1.0.0-a1-Inc
-	BUILD_VERSION := 1.0.1a1
-endif
-
-
-
 #
 # Setup device specific product configuration.
 #
@@ -30,6 +13,18 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NA
 
 PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 
+# Set up the code name & Build version
+PRODUCT_CODENAME = Evervolv-Dives
+
+#BUILD_VERSION := 1.0.1a2
+
+BUILD_VERSION := v1.0.1a2-$(shell date +%m%d%Y)-NIGHTLY
+
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.build.romversion=Evervolv-Dives-v1.0.1a2
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.romversion=Evervolv-Dives-v1.0.1a2-$(shell date +%m%d%Y)-NIGHTLY-Inc
 
 #TODO - FIXME
 # Extra inc overlay

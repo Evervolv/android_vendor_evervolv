@@ -47,7 +47,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/common
 #include frameworks/base/data/sounds/AudioPackage5.mk
 
 PRODUCT_COPY_FILES += \
-    vendor/evervolv/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
     vendor/evervolv/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/evervolv/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/evervolv/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
@@ -67,14 +66,11 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/evervolv/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
+
+
 #Temporarily use this prebuilt Superuser.apk
 PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
-
-PRODUCT_COPY_FILES += \
-    vendor/evervolv/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
-    vendor/evervolv/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
-
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

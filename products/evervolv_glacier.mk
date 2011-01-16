@@ -7,21 +7,6 @@ $(call inherit-product, vendor/evervolv/products/common.mk)
 # Include GSM stuff
 $(call inherit-product, vendor/evervolv/products/gsm.mk)
 
-PRODUCT_CODENAME := Evervolv-Spolio
-
-NIGHTLY := false
-
-# Set up the code name & Build version
-ifdef NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.romversion=Evervolv-Spolio-v1.0.0-a0-$(shell date +%m%d%Y)-NIGHTLY-Supersonic \
-    	BUILD_VERSION := 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.romversion=Evervolv-Spolio-v1.0.0-a0-Supersonic \
-    	BUILD_VERSION := 1.0.1a1
-endif
-
 #
 # Setup device specific product configuration.
 #
@@ -32,12 +17,26 @@ PRODUCT_MODEL := HTC Glacier
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78 BUILD_FINGERPRINT=tmobile/htc_glacier/glacier/glacier:2.2.1/FRG83/277036:user/release-keys PRIVATE_BUILD_DESC="1.17.531.2 CL277036 release-keys"
 
+PRODUCT_CODENAME = Evervolv-Spolio
+
+NIGHTLY = false
+
+# Set up the code name & Build version
+ifdef NIGHTLY
+    BUILD_VERSION = 1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.build.romversion=Evervolv-Spolio-v1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY-Glacier 
+else
+    BUILD_VERSION = 1.0.1a1
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.build.romversion=Evervolv-Spolio-v1.0.1a1-Glacier
+endif
 
 # Extra glacier overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/glacier
 
 #Include Torch
-PRODUCT_PACKAGES += Torch
+#PRODUCT_PACKAGES += Torch
 
 # Broadcom FM radio
 #$(call inherit-product, vendor/evervolv/products/bcm_fm_radio.mk)

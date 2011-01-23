@@ -24,6 +24,8 @@ BUILD_VERSION := v1.0.1a1-$(shell date +%m%d%Y)-NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
+PRODUCT_MOTD :="\nThis is a test MOTD for the Evo Shift 4G. This will be followed by a complete install message for anyone flashing an evervolv rom."
+
 #TODO - FIXME
 # Extra speedy overlay
 #PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/speedy

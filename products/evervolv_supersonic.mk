@@ -21,6 +21,8 @@ BUILD_VERSION := 1.0.1b1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
+PRODUCT_MOTD :="\n\n\nThis is a test MOTD for the Evo 4G. This will be followed by a complete install message for anyone flashing an evervolv rom."
+
 #TODO - FIXME
 # Extra Supersonic overlay
 #PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/supersonic

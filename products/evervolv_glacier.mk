@@ -32,6 +32,8 @@ else
         ro.build.romversion=Evervolv-Spolio-v1.0.1a1-Glacier
 endif
 
+PRODUCT_MOTD :="\nThis is a test MOTD for the Droid Incredible. This will be followed by a complete install message for anyone flashing an evervolv rom."
+
 # Extra glacier overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/glacier
 

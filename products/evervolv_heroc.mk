@@ -19,6 +19,8 @@ BUILD_VERSION := 1.0.1a1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-Ignis-v1.0.1a2-Heroc
 
+PRODUCT_MOTD :="\nThis is a test MOTD for the Droid Incredible. This will be followed by a complete install message for anyone flashing an evervolv rom."
+
 # Extra overlay for Gallery3D orientation hack
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/heroc
 

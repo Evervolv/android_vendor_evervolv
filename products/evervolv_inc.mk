@@ -14,17 +14,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NA
 PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 
 # Set up the code name & Build version
-PRODUCT_CODENAME = Evervolv-Dives
+PRODUCT_CODENAME := Evervolv-Dives
 
-#BUILD_VERSION := 1.0.1a2
+BUILD_VERSION := 1.0.1b1
 
-BUILD_VERSION := v1.0.1a2-$(shell date +%m%d%Y)-NIGHTLY
-
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.build.romversion=Evervolv-Dives-v1.0.1a2
+#BUILD_VERSION := v1.0.1b1-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.romversion=Evervolv-Dives-v1.0.1a2-$(shell date +%m%d%Y)-NIGHTLY-Inc
+    ro.build.romversion=$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
 #TODO - FIXME
 # Extra inc overlay

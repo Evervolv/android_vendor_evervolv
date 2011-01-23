@@ -14,15 +14,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78 PRODUCT_NA
 # Set up the code name & Build version
 PRODUCT_CODENAME = Evervolv-Acies
 
-#BUILD_VERSION := 1.0.1a2
+BUILD_VERSION := 1.0.1b1
 
-BUILD_VERSION := v1.0.1a2-$(shell date +%m%d%Y)-NIGHTLY
-
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.build.romversion=Evervolv-Acies-v1.0.1a2-NIGHTLY-Supersonic 
+#BUILD_VERSION := v1.0.1b1-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.romversion=Evervolv-Acies-v1.0.1a2-$(shell date +%m%d%Y)-NIGHTLY-Supersonic 
+    ro.build.romversion=$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
 #TODO - FIXME
 # Extra Supersonic overlay

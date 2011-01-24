@@ -3,12 +3,10 @@ PRODUCT_NAME := evervolv
 PRODUCT_BRAND := evervolv
 PRODUCT_DEVICE := generic
 
-# PRODUCT_PACKAGES += ADWLauncher
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=DonMessWivIt.ogg
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules

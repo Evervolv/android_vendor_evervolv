@@ -11,6 +11,8 @@ else ifeq ($(TARGET_PRODUCT),evervolv_supersonic)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_supersonic.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_speedy)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_speedy.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_vision)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_vision.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_heroc)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_heroc.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_glacier)

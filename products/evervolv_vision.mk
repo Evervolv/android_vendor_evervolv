@@ -1,5 +1,6 @@
 $(call inherit-product, device/htc/vision/vision.mk)
 $(call inherit-product, vendor/evervolv/products/common.mk)
+$(call inherit-product, vendor/evervolv/products/common-hwkb.mk)
 
 # Include GSM stuff
 $(call inherit-product, vendor/evervolv/products/gsm.mk)
@@ -15,7 +16,7 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78C BUILD_FINGERPRINT=tmobile/htc_vision/vision/vision:2.2/FRF91/277427:user/release-keys PRIVATE_BUILD_DESC="1.22.531.8 CL277427 release-keys"
 
 # Set up the code name & Build version
-PRODUCT_CODENAME = Evervolv-Artisx
+PRODUCT_CODENAME = Evervolv-Verus
 
 BUILD_VERSION := 1.0.1a1
 

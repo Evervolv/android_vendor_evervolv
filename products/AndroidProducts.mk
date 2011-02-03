@@ -17,4 +17,6 @@ else ifeq ($(TARGET_PRODUCT),evervolv_heroc)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_heroc.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_glacier)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_glacier.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_passion)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_passion.mk
 endif

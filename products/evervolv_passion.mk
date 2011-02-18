@@ -1,4 +1,4 @@
-$(call inherit-product, device/htc/supersonic/supersonic.mk)
+$(call inherit-product, device/htc/passion/full_passion.mk)
 $(call inherit-product, vendor/evervolv/products/common.mk)
 $(call inherit-product, vendor/evervolv/products/gsm.mk)
 
@@ -13,7 +13,7 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRH78C BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83D/75603:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83D 75603 release-keys"
 
 # Set up the code name & Build version
-PRODUCT_CODENAME = Evervolv-Perdo
+PRODUCT_CODENAME = Perdo
 
 BUILD_VERSION := 1.0.1a1
 
@@ -32,14 +32,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.emc.mode=2
 
 #TODO - FIXME
-# Extra Supersonic overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/supersonic
+# Extra passion overlay
+#PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/passion
 
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch
 
 #TODO - FIXME
-# Copy supersonic specific prebuilt files
+# Copy passion specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
    vendor/evervolv/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip

@@ -23,6 +23,7 @@ PRODUCT_MOTD :="\nThis is a test MOTD for the Droid Incredible. This will be fol
 
 # Extra overlay for Gallery3D orientation hack
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/heroc
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-hero.map
 
 
 #

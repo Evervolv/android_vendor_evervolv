@@ -12,11 +12,11 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78C PRODUCT_NAME=htc_supersonic BUILD_FINGERPRINT=sprint/htc_supersonic/supersonic/supersonic:2.2/FRF91/294884:user/release-keys PRIVATE_BUILD_DESC="3.70.651.1 CL294884 release-keys"
 
 # Set up the code name & Build version
-PRODUCT_CODENAME = Evervolv-Acies
+PRODUCT_CODENAME = Acies
 
-BUILD_VERSION := 1.0.1b3
+BUILD_VERSION := 1.0.1b4
 
-#BUILD_VERSION := v1.0.1b3-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.0.1b4-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=$(PRODUCT_CODENAME)-$(BUILD_VERSION)

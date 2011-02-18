@@ -14,14 +14,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78C PRODUCT_N
 PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 
 # Set up the code name & Build version
-PRODUCT_CODENAME := Evervolv-Dives
+PRODUCT_CODENAME := Dives
 
-BUILD_VERSION := 1.0.1b3
+BUILD_VERSION := 1.0.1b4
 
-#BUILD_VERSION := v1.0.1b3-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.0.1b4-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.romversion=$(PRODUCT_CODENAME)-$(BUILD_VERSION)
+    ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
 PRODUCT_MOTD :="\n\n\nThis is a test MOTD for the Droid Incredible. This will be followed by a complete install message for anyone flashing an evervolv rom."
 

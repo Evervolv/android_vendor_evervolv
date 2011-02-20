@@ -13,7 +13,7 @@ PRODUCT_MODEL := PG06100
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78C PRODUCT_NAME=htc_speedy BUILD_FINGERPRINT=sprint/htc_speedy/speedy/speedy:2.2/FRF91/291627:user/release-keys PRIVATE_BUILD_DESC="1.17.651.1 CL291627 release-keys"
 
-# Set up the code name & Build version
+# Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME = Artis
 
 BUILD_VERSION := 1.0.1a3
@@ -23,14 +23,12 @@ BUILD_VERSION := 1.0.1a3
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
-PRODUCT_MOTD :="\nThis is a test MOTD for the Evo Shift 4G. This will be followed by a complete install message for anyone flashing an evervolv rom."
+PRODUCT_MOTD :="\n\n\nThis is a test MOTD for the Evo Shift 4G. This will be followed by a complete install message for anyone flashing an evervolv rom."
 
-#TODO - FIXME
 # Extra speedy overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/speedy
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/speedy
 
-#TODO - FIXME
-# Copy speedy specific prebuilt files
+# Copy hdpi specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
    vendor/evervolv/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip

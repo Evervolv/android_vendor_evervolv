@@ -29,6 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Evervolv specific product packages
 PRODUCT_PACKAGES += \
     EVParts \
+    EVWallpapers \
     FileManager 
 
 # Extra tools in Evervolv

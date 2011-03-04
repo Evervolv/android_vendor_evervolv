@@ -16,9 +16,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78C PRODUCT_N
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME = Artis
 
-BUILD_VERSION := 1.0.1a3
+BUILD_VERSION := 1.0.1a4
 
-#BUILD_VERSION := v1.0.1a3-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.0.1a4-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

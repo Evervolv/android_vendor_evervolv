@@ -16,9 +16,9 @@ PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Dives
 
-BUILD_VERSION := 1.0.2b1
+BUILD_VERSION := 1.0.2b3
 
-#BUILD_VERSION := v1.0.2b1-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.0.2b3-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

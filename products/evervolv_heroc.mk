@@ -23,7 +23,7 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 
 # Extra overlay for Gallery3D orientation hack
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/heroc
-PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-hero.map
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-linux-arm-heroc.map
 
 
 #

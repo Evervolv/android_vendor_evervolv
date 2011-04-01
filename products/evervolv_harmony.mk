@@ -1,6 +1,6 @@
 $(call inherit-product, device/nvidia/harmony/device_harmony.mk)
 $(call inherit-product, vendor/evervolv/products/common.mk)
-
+$(call inherit-product, vendor/evervolv/products/common-tabs.mk)
 #
 # Setup device specific product configuration.
 #
@@ -23,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Viewsonic G Tablet\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 
-# Extra Supersonic overlay
+# Extra Harmony overlay
 #
 # TODO - not needed right now, but a must have.
 #PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/harmony
@@ -32,8 +32,8 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 #PRODUCT_PACKAGES += Torch
 
 
-# Copy hdpi specific prebuilt files
+# Copy mdpi specific prebuilt files
 #
-#TODO - MAKE MDPI!
+# TODO - need to get this working properly.
 #PRODUCT_COPY_FILES +=  \
-#   vendor/evervolv/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+#   vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip

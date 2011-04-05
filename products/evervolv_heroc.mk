@@ -14,10 +14,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FING
 # Set up the code name & Build version
 PRODUCT_CODENAME := Evervolv-Ignis
 
-BUILD_VERSION := 1.0.1a1
+BUILD_VERSION := 1.0.2a1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.romversion=Evervolv-Ignis-v1.0.1a2-Heroc
+    ro.build.romversion=Evervolv-Ignis-v1.0.2a1-Heroc
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your HTC Hero\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 

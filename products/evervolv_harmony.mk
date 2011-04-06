@@ -26,7 +26,7 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Extra Harmony overlay
 #
 # TODO - not needed right now, but a must have.
-#PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/harmony
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/harmony
 
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch

@@ -17,9 +17,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion BUILD_ID=FRG83D BUILD_DISPL
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Perdo
 
-BUILD_VERSION := 1.0.2b3
+BUILD_VERSION := 1.0.2b4
 
-#BUILD_VERSION := v1.0.2b3-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.0.2b4-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

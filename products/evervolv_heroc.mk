@@ -12,7 +12,7 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
 # Set up the code name & Build version
-PRODUCT_CODENAME := Evervolv-Ignis
+PRODUCT_CODENAME := Ignis
 
 BUILD_VERSION := 1.0.2a1
 

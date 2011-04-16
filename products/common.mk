@@ -45,6 +45,12 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/common
 #include frameworks/base/data/sounds/AudioPackage4.mk
 #include frameworks/base/data/sounds/AudioPackage5.mk
 
+# T-Mobile theme engine
+include vendor/evervolv/products/themes_common.mk
+
+# Theme packages
+include vendor/evervolv/products/themes.mk
+
 PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/evervolv/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \

@@ -2,6 +2,6 @@
 
 ifneq ($(SKIP_THEMES),true)
 PRODUCT_PACKAGES += \
-       Androidian \
+       Androidian-6-100 \
        Cyanbread
 endif

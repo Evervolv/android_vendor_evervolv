@@ -9,15 +9,17 @@ PRODUCT_BRAND := sprint
 PRODUCT_DEVICE := heroc
 PRODUCT_MODEL := HERO200
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
 # Set up the code name & Build version
 PRODUCT_CODENAME := Ignis
 
-BUILD_VERSION := 1.0.2a1
+BUILD_VERSION := 1.1.0a1
+
+#BUILD_VERSION := v1.1.0a1$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.romversion=Evervolv-Ignis-v1.0.2a1-Heroc
+    ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your HTC Hero\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 

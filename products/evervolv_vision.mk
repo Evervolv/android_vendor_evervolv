@@ -13,14 +13,14 @@ PRODUCT_BRAND := tmobile
 PRODUCT_DEVICE := vision
 PRODUCT_MODEL := HTC Vision
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=tmobile/htc_vision/vision/vision:2.2/FRF91/277427:user/release-keys PRIVATE_BUILD_DESC="1.22.531.8 CL277427 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=tmobile/htc_vision/vision/vision:2.2/FRF91/277427:user/release-keys PRIVATE_BUILD_DESC="1.22.531.8 CL277427 release-keys"
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Verus
 
-BUILD_VERSION := 1.0.2a1
+BUILD_VERSION := 1.1.0a1
 
-#BUILD_VERSION := v1.0.2a1-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.1.0a1-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

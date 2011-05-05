@@ -2,7 +2,7 @@ $(call inherit-product, device/htc/speedy/speedy.mk)
 $(call inherit-product, vendor/evervolv/products/common.mk)
 $(call inherit-product, vendor/evervolv/products/common-hwkb.mk)
 # Inherit WiMAX stuff
-$(call inherit-product, vendor/cyanogen/products/wimax.mk)
+$(call inherit-product, vendor/evervolv/products/wimax.mk)
 
 #
 # Setup device specific product configuration.

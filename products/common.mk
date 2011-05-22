@@ -41,10 +41,6 @@ PRODUCT_PACKAGES += \
 # Common Evervolv overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/common
 
-# Bring in some audio files
-#include frameworks/base/data/sounds/AudioPackage4.mk
-#include frameworks/base/data/sounds/AudioPackage5.mk
-
 # T-Mobile theme engine
 include vendor/evervolv/products/themes_common.mk
 
@@ -61,6 +57,8 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/evervolv/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
     vendor/evervolv/prebuilt/common/etc/init.d/04modules:system/etc/init.d/04modules \
+    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
+    vendor/cyanogen/prebuilt/common/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
     vendor/evervolv/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
     vendor/evervolv/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
     vendor/evervolv/prebuilt/common/bin/compcache:system/bin/compcache \
@@ -80,7 +78,4 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Always run in insecure mode, enables root on user build variants
-#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 

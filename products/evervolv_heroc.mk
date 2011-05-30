@@ -31,5 +31,5 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-
 #
 # Copy dream/sapphire specific prebuilt files
 #
-#PRODUCT_COPY_FILES +=  \
-#    vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
+PRODUCT_COPY_FILES +=  \
+    vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip

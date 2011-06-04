@@ -14,9 +14,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FING
 # Set up the code name & Build version
 PRODUCT_CODENAME := Ignis
 
-BUILD_VERSION := 1.1.0a1
+BUILD_VERSION := 1.1.0a2
 
-#BUILD_VERSION := v1.1.0a1$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.1.0a2$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

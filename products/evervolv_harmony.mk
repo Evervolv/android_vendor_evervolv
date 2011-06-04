@@ -14,9 +14,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=harmony BUILD_ID=GRI40 BUILD_DISPLA
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Ferus
 
-BUILD_VERSION := 1.1.0a1
+BUILD_VERSION := 1.1.0a2
 
-#BUILD_VERSION := v1.1.0a1$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.1.0a2$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
@@ -35,5 +35,5 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/harmony
 # Copy mdpi specific prebuilt files
 #
 # TODO - need to get this working properly.
-#PRODUCT_COPY_FILES +=  \
-#   vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
+PRODUCT_COPY_FILES +=  \
+   vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip

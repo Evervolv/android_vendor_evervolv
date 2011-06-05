@@ -2,4 +2,5 @@
 <resources>
     <!-- Whether or not the device is a tablet. -->
     <bool name="device_is_tablet">true</bool>
+    <bool name="has_trackball">false</bool>
 </resources>

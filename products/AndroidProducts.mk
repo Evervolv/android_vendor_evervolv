@@ -21,4 +21,8 @@ else ifeq ($(TARGET_PRODUCT),evervolv_passion)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_passion.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_harmony)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_harmony.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_crespo)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_crespo.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_crespo4g)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_crespo4g.mk
 endif

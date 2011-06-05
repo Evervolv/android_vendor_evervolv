@@ -9,7 +9,7 @@ PRODUCT_BRAND := nvidia
 PRODUCT_DEVICE := harmony
 PRODUCT_MODEL := GTablet
 PRODUCT_MANUFACTURER := malata
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=harmony BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=smb_a1002 BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.4 GRJ22 121341 release-keys"
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Ferus
@@ -26,7 +26,9 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Extra Harmony overlay
 #
 # TODO - not needed right now, but a must have.
-PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/harmony
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/evervolv/overlay/harmony \
+    vendor/evervolv/overlay/tablet
 
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch

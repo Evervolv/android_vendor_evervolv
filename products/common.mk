@@ -28,6 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Evervolv specific product packages
 PRODUCT_PACKAGES += \
+    CreoLauncher \
     EVParts \
     EVWallpapers \
     FileManager 

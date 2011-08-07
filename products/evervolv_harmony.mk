@@ -14,9 +14,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=smb_a1002 BUILD_ID=GRJ22 BUILD_DISP
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Ferus
 
-BUILD_VERSION := 1.1.0a2
+BUILD_VERSION := 1.2.0a1
 
-#BUILD_VERSION := v1.1.0a2$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.2.0a1$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

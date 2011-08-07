@@ -23,9 +23,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/shooter
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Neco
 
-BUILD_VERSION := 1.1.0a1
+BUILD_VERSION := 1.2.0a1
 
-#BUILD_VERSION := v1.1.0a1-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.2.0a1-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

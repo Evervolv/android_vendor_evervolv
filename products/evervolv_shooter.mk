@@ -5,7 +5,7 @@ $(call inherit-product, device/htc/shooter/shooter.mk)
 $(call inherit-product, vendor/evervolv/products/common.mk)
 
 # Inherit WiMAX stuff
-#$(call inherit-product, vendor/evervolv/products/wimax.mk)
+$(call inherit-product, vendor/evervolv/products/wimax.mk)
 
 #
 # Setup device specific product configuration.

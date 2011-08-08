@@ -17,7 +17,9 @@ PRODUCT_MODEL := Liberty
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_liberty BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
+PRODUCT_CODENAME := Intus
 BUILD_VERSION := 1.2.0a1
+#BUILD_VERSION := v1.2.0a1-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-linux-arm-msm722x.map
 
@@ -25,7 +27,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-
 #$(call inherit-product, vendor/evervolv/products/bcm_fm_radio.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.romversion=Evervolv-$(PRODUCT_DEVICE)-$(BUILD_VERSION)
+    ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
+
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Liberty\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 
 #
 # Copy liberty specific prebuilt files

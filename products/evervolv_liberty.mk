@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/liberty/liberty.mk)
 
 # Inherit some common evervolv stuff.
-$(call inherit-product, vendor/evervolv/products/common_full.mk)
+$(call inherit-product, vendor/evervolv/products/common.mk)
 
 # Include GSM stuff
 $(call inherit-product, vendor/evervolv/products/gsm.mk)
@@ -22,7 +22,7 @@ BUILD_VERSION := 1.2.0a1
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-linux-arm-msm722x.map
 
 # Broadcom FM radio
-$(call inherit-product, vendor/evervolv/products/bcm_fm_radio.mk)
+#$(call inherit-product, vendor/evervolv/products/bcm_fm_radio.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_DEVICE)-$(BUILD_VERSION)

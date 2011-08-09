@@ -20,6 +20,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_shooter BUILD_ID=GRI40 BUILD_DI
 # Extra shooter overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/shooter
 
+# qHD overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/qhd
+
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Neco
 

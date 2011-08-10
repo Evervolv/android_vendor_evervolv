@@ -4,6 +4,7 @@ add_lunch_combo evervolv_glacier-eng
 add_lunch_combo evervolv_harmony-eng
 add_lunch_combo evervolv_heroc-eng
 add_lunch_combo evervolv_inc-eng
+add_lunch_combo evervolv_liberty-eng
 add_lunch_combo evervolv_passion-eng
 add_lunch_combo evervolv_shooter-eng
 add_lunch_combo evervolv_supersonic-eng

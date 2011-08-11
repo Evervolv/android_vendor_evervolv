@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/evervolv/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
     vendor/evervolv/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/evervolv/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
     vendor/evervolv/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/evervolv/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/evervolv/prebuilt/common/xbin/powertop:system/xbin/powertop \

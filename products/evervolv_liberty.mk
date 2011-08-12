@@ -19,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_liberty BUILD_ID=GRI40 BUILD_DI
 
 PRODUCT_CODENAME := Intus
 BUILD_VERSION := 1.2.0a2
-#BUILD_VERSION := v1.2.0a1-$(shell date +%m%d%Y)-NIGHTLY
+#BUILD_VERSION := v1.2.0a2-$(shell date +%m%d%Y)-NIGHTLY
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-linux-arm-msm722x.map
 

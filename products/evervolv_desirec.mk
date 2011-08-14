@@ -14,6 +14,12 @@ PRODUCT_MODEL := ERIS
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
+# Overlay for lockscreen_carrier_default
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/desirec
+
+# Enable Windows Media
+WITH_WINDOWS_MEDIA := true
+
 #
 # Set up the code name & Build version
 PRODUCT_CODENAME := Eligo

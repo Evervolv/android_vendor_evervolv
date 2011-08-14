@@ -1,5 +1,6 @@
 add_lunch_combo evervolv_crespo-eng
 add_lunch_combo evervolv_crespo4g-eng
+add_lunch_combo evervolv_desirec-eng
 add_lunch_combo evervolv_glacier-eng
 add_lunch_combo evervolv_harmony-eng
 add_lunch_combo evervolv_heroc-eng

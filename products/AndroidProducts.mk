@@ -29,4 +29,7 @@ else ifeq ($(TARGET_PRODUCT),evervolv_crespo4g)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_crespo4g.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_liberty)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_liberty.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_desirec)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_desirec.mk
 endif
+

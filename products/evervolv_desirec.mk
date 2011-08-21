@@ -23,8 +23,8 @@ WITH_WINDOWS_MEDIA := true
 #
 # Set up the code name & Build version
 PRODUCT_CODENAME := Eligo
-BUILD_VERSION := 1.2.0b1
-#BUILD_VERSION := v1.2.0b1$(shell date +%m%d%Y)-NIGHTLY
+BUILD_VERSION := 1.2.0b2
+#BUILD_VERSION := v1.2.0b2$(shell date +%m%d%Y)-NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 PRODUCT_MOTD :="\n\n\n------------MESSAGE------------\nThank you for choosing Evervolv\n for your HTC Droid Eris!\n\nPlease visit us at:\n \#evervolv on irc.freenode.net\n\nFollow @preludedrew on twitter\n for the latest Evervolv updates\n\nGet the latest rom at:\n http://www.evervolv.com\n--------------------------------\n"

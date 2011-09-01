@@ -9,6 +9,8 @@ ifeq ($(TARGET_PRODUCT),evervolv_inc)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_inc.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_supersonic)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_supersonic.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_pyramid)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_pyramid.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_shooter)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_shooter.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_speedy)

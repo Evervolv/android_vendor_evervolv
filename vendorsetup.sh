@@ -12,5 +12,6 @@ add_lunch_combo evervolv_shooter-eng
 add_lunch_combo evervolv_supersonic-eng
 add_lunch_combo evervolv_speedy-eng
 add_lunch_combo evervolv_vision-eng
+add_lunch_combo evervolv_vivow-eng
 
 

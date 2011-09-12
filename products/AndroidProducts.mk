@@ -33,5 +33,7 @@ else ifeq ($(TARGET_PRODUCT),evervolv_liberty)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_liberty.mk
 else ifeq ($(TARGET_PRODUCT),evervolv_desirec)
   PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_desirec.mk
+else ifeq ($(TARGET_PRODUCT),evervolv_vivow)
+  PRODUCT_MAKEFILES := $(LOCAL_DIR)/evervolv_vivow.mk
 endif
 

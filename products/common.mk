@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/evervolv/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
     vendor/evervolv/prebuilt/common/etc/init.d/04modules:system/etc/init.d/04modules \
-    vendor/evervolv/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
+    vendor/evervolv/prebuilt/common/etc/init.d/05mountext:system/etc/init.d/05mountext \
     vendor/evervolv/prebuilt/common/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
     vendor/evervolv/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
     vendor/evervolv/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \

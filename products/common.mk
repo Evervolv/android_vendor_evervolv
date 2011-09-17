@@ -56,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/evervolv/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
     vendor/evervolv/prebuilt/common/etc/profile:system/etc/profile \
     vendor/evervolv/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/evervolv/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/evervolv/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/evervolv/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
     vendor/evervolv/prebuilt/common/etc/init.d/04modules:system/etc/init.d/04modules \

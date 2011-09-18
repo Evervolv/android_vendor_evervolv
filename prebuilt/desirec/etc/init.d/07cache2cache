@@ -1,0 +1,33 @@
+#!/system/bin/sh
+#
+# Author: zach.xtr Jan 2011 (modified by MongooseHelix)
+# Moves the contents of /data/dalvik-cache to the rarely used /cache/dalvik-cache and then symlinks back
+
+DCFILES=$(ls /data/dalvik-cache | wc -l)
+
+log -p i -t cache2cache "running cache2cache to move /data/dalvik-cache to /cache/dalvik-cache";
+
+# mount /system
+/system/xbin/busybox mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
+
+# check if the dalvik-cache directories exist and the /data one isn't already symlinked
+if [ -d /data/dalvik-cache ] && [ ! -h /data/dalvik-cache ] && [ -d /cache/dalvik-cache ]; then
+    # check if there are any dalvik-cache files to move from /data/dalvik-cache
+    if [ $DCFILES -gt 0 ]; then
+        log -p i -t cache2cache "moving files from /data/dalvik-cache to /cache/dalvik-cache";
+        /system/xbin/busybox cp -fp /data/dalvik-cache/* /cache/dalvik-cache;
+    fi
+    #remove directory so it can be created by symlink
+    /system/xbin/busybox rm -r /data/dalvik-cache;
+
+    # link the dalvik-cache directories
+    log -p i -t cache2cache "creating symbolic link of /cache/dalvik-cache as /data/dalvik-cache";
+    /system/xbin/busybox ln -s /cache/dalvik-cache /data/dalvik-cache;
+    /system/xbin/busybox chown 1000:1000 /data/dalvik-cache
+    /system/xbin/busybox chmod 0771 /data/dalvik-cache
+else
+    log -p i -t cache2cache "nothing to do...exiting";
+fi
+
+# unmount /system
+/system/xbin/busybox mount -o remount,ro -t yaffs2 /dev/block/mtdblock3 /system

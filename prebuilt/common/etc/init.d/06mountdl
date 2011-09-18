@@ -5,11 +5,16 @@
 #
 
 CACHESIZE=$(df -k /cache | tail -n1 | tr -s ' ' | cut -d ' ' -f2)
+CDFILES=$(ls /cache/download | wc -l)
+
+if [ $CDFILES -gt 0 ]
+then
+  rm /cache/download/downloadfile*.apk
+fi
+
 if [ $CACHESIZE -lt 20000 ]
 then
   mount -o bind /data/local/download /cache/download
 fi
-
-rm /cache/download/downloadfile*.apk
 
 exit 0

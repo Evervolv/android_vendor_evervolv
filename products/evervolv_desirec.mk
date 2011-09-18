@@ -32,4 +32,5 @@ PRODUCT_MOTD :="\n\n\n------------MESSAGE------------\nThank you for choosing Ev
 #
 # Copy compatible prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/evervolv/prebuilt/desirec/etc/init.d/07cache2cache:system/etc/init.d/07cache2cache

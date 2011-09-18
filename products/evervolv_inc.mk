@@ -28,6 +28,9 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Extra inc overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/inc
 
+# Hot Reboot overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
+
 # Copy hdpi specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \

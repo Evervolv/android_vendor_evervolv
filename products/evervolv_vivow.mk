@@ -26,6 +26,9 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Extra vivow overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/vivow
 
+# Hot Reboot overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
+
 # Add AicBootFix for vivow battery fix
 PRODUCT_PACKAGES += AicBootFix
 

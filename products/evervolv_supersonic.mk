@@ -28,6 +28,9 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 # Extra Supersonic overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/supersonic
 
+# Hot Reboot overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
+
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch
 

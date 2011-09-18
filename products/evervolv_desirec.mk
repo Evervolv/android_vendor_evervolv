@@ -17,6 +17,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ90 BUILD_FING
 # Set product specific overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/desirec
 
+# Hot Reboot overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
+
 # Enable Windows Media
 WITH_WINDOWS_MEDIA := true
 

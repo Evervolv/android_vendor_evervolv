@@ -27,6 +27,8 @@ PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank yo
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/heroc
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/evervolv/prelink-linux-arm-heroc.map
 
+# Hot Reboot overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
 
 #
 # Copy dream/sapphire specific prebuilt files

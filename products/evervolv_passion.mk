@@ -36,6 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Extra passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/passion
 
+# Hot Reboot overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
+
 # Add the Torch app
 #PRODUCT_PACKAGES += Torch
 

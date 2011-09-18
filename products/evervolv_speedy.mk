@@ -17,9 +17,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ90 PRODUCT_NA
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME = Artis
 
-BUILD_VERSION := 1.2.0b1-Wimacs
-
-#BUILD_VERSION := v1.2.0b1-Wimacs-$(shell date +%m%d%Y)-NIGHTLY
+ifeq ($(NIGHTLY_BUILD),true)
+    BUILD_VERSION := v1.2.0b1-Wimacs-$(shell date +%m%d%Y)-NIGHTLY
+else
+    BUILD_VERSION := 1.2.0b1-Wimacs
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

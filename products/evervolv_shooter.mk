@@ -26,9 +26,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/qhd
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Neco
 
-BUILD_VERSION := 1.2.0a1
-
-#BUILD_VERSION := v1.2.0a1-$(shell date +%m%d%Y)-NIGHTLY
+ifeq ($(NIGHTLY_BUILD),true)
+    BUILD_VERSION := v1.2.0a1-$(shell date +%m%d%Y)-NIGHTLY
+else
+    BUILD_VERSION := 1.2.0a1
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)

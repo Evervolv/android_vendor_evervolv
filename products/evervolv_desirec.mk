@@ -27,9 +27,9 @@ WITH_WINDOWS_MEDIA := true
 # Set up the code name & Build version
 PRODUCT_CODENAME := Eligo
 ifeq ($(NIGHTLY_BUILD),true)
-    BUILD_VERSION := v1.2.0b2-$(shell date +%m%d%Y)-NIGHTLY
+    BUILD_VERSION := v1.2.0b3-$(shell date +%m%d%Y)-NIGHTLY
 else
-    BUILD_VERSION := 1.2.0b2
+    BUILD_VERSION := 1.2.0b3
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -35,4 +35,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
 # Copy dream/sapphire specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/evervolv/prebuilt/nohotspot/app/wireless_tether_2_0_7.apk:system/app/WirelessTether.apk \
+    vendor/evervolv/prebuilt/nohotspot/lib/libnativetask.so:system/lib/libnativetask.so

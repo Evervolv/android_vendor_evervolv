@@ -1,0 +1,12 @@
+#!/system/bin/sh
+#
+# Remounts partitions with noatime and nodiratime options
+
+PART=$(busybox mount | cut -d " " -f3)
+
+log -p i -t mountoptions "remounting partitions with noatime & nodiratime options"
+for p in $PART
+do
+  sync
+  busybox mount -o remount,noatime,nodiratime $p
+done

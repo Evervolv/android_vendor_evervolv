@@ -13,7 +13,7 @@ $(call inherit-product, vendor/evervolv/products/gsm.mk)
 PRODUCT_NAME := evervolv_pyramid
 PRODUCT_BRAND := htc
 PRODUCT_DEVICE := pyramid
-PRODUCT_MODEL := Sensation
+PRODUCT_MODEL := Sensation 4g
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_pyramid BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT="tmous/htc_pyramid/pyramid:2.3.3/GRI40/70849:user/release-keys" PRVIATE_BUILD_DESC="1.29.531.2 CL70849 release-keys"
 
@@ -35,7 +35,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.romversion=Evervolv-$(PRODUCT_CODENAME)-$(BUILD_VERSION)
 
-PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Evo 3D\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Sensation 4g\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 
 #
 # Copy passion specific prebuilt files

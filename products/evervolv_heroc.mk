@@ -9,7 +9,7 @@ PRODUCT_BRAND := sprint
 PRODUCT_DEVICE := heroc
 PRODUCT_MODEL := HERO200
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
 # Set up the code name & Build version
 PRODUCT_CODENAME := Ignis
@@ -36,5 +36,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/evervolv/overlay/hot_reboot
 #
 PRODUCT_COPY_FILES +=  \
     vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/evervolv/prebuilt/nohotspot/app/wireless_tether_2_0_7.apk:system/app/WirelessTether.apk \
-    vendor/evervolv/prebuilt/nohotspot/lib/libnativetask.so:system/lib/libnativetask.so
+    vendor/evervolv/prebuilt/desirec_heroc/etc/init.d/08mountoptions:system/etc/init.d/08mountoptions \
+    vendor/evervolv/prebuilt/desirec_heroc/system/app/wireless_tether_2_0_7.apk:system/app/WirelessTether.apk \
+    vendor/evervolv/prebuilt/desirec_heroc/system/lib/libnativetask.so:system/lib/libnativetask.so

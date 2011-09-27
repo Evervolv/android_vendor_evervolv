@@ -40,7 +40,7 @@ PRODUCT_MOTD :="\n\n\n------------MESSAGE------------\nThank you for choosing Ev
 # Copy compatible prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/evervolv/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/evervolv/prebuilt/desirec/etc/init.d/07cache2cache:system/etc/init.d/07cache2cache \
-    vendor/evervolv/prebuilt/desirec/etc/init.d/08mountoptions:system/etc/init.d/08mountoptions \
-    vendor/evervolv/prebuilt/nohotspot/app/wireless_tether_2_0_7.apk:system/app/WirelessTether.apk \
-    vendor/evervolv/prebuilt/nohotspot/lib/libnativetask.so:system/lib/libnativetask.so
+    vendor/evervolv/prebuilt/desirec_heroc/etc/init.d/07cache2cache:system/etc/init.d/07cache2cache \
+    vendor/evervolv/prebuilt/desirec_heroc/etc/init.d/08mountoptions:system/etc/init.d/08mountoptions \
+    vendor/evervolv/prebuilt/desirec_heroc/system/app/wireless_tether_2_0_7.apk:system/app/WirelessTether.apk \
+    vendor/evervolv/prebuilt/desirec_heroc/system/lib/libnativetask.so:system/lib/libnativetask.so
